@@ -38,7 +38,7 @@ Password Manager is a web application built with React and Vite for the frontend
 
    ```bash
    git clone https://github.com/lilithCode/password-manager.git
-   cd PasswordManager
+   cd password-manager
    ```
 
 2. **Install frontend dependencies**:
@@ -73,66 +73,6 @@ Password Manager is a web application built with React and Vite for the frontend
 
 3. **Open your browser and navigate to** `http://localhost:3000`
 
-### Deployment
-
-#### Deploying the Backend to Heroku
-
-1. **Login to Heroku**:
-
-   ```bash
-   heroku login
-   ```
-
-2. **Create a new Heroku app**:
-
-   ```bash
-   cd backend
-   heroku create your-app-name
-   ```
-
-3. **Add MongoDB to your Heroku app**:
-
-   ```bash
-   heroku addons:create mongolab
-   ```
-
-4. **Deploy to Heroku**:
-
-   ```bash
-   git add .
-   git commit -m "Deploy backend to Heroku"
-   git push heroku master
-   ```
-
-#### Deploying the Frontend to Vercel
-
-1. **Login to Vercel**:
-
-   ```bash
-   vercel login
-   ```
-
-2. **Deploy to Vercel**:
-
-   ```bash
-   cd src
-   vercel
-   ```
-
-### Environment Variables
-
-Create a `.env` file in the `backend` directory and add the following environment variables:
-
-```
-MONGODB_URI=your-mongodb-uri
-PORT=3000
-```
-
-### API Endpoints
-
-- **GET /passwords**: Retrieve all passwords
-- **POST /passwords**: Add a new password
-- **DELETE /passwords/:id**: Delete a password by ID
 
 ### Contributing
 
